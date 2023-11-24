@@ -1,0 +1,522 @@
+:root{
+    --color-black: #000;
+  }
+  
+  [role="main"] {
+      box-sizing: border-box;
+      font-family: inherit;
+      font-weight: 400;
+  }
+  
+  [role="main"] * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    line-height: initial;
+    text-decoration: none;
+    
+  }
+  [role="main"] p{
+    font-size:14px;
+  }
+  [role="main"] fieldset{
+    
+    all: unset;
+    width: 100%;
+    display: block;
+  }
+  .Advanced_lens {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 99999999; 
+      align-items: center;
+      color: #000; 
+      border: none;
+      margin-top: 0;
+      background: rgba(0, 0, 0, 0.7);
+      display:none;
+  }
+  
+  .Advanced_lens [role="right-usage"] {
+      margin: 20px;
+      border-radius: 5px;
+      overflow: hidden;
+      background: #fff;
+      height: calc(100vh - 38px);
+      display: grid;
+      min-height: calc(100vh - 60px);
+  }
+  .Advanced_lens [role="right-usage"] *{
+      list-style: none;
+  }
+  .Advanced_lens [role="right-usage"] [role="list-box"] {
+      display: grid;
+      gap: 0px;
+      grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+      height: 100%;
+      width: 100%;
+      overflow: hidden; 
+      grid-template-rows: 100%;
+  }
+  
+  
+  /*right area model css */
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"]{
+    padding: 0 20px;
+    position: relative;
+    overflow-y: auto;
+    padding-bottom: 20px;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .usage_s .usage_div_box [role="box"]{
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      gap: 20px; 
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding: 26px 0px;
+      transition: 0.3s;
+      position: relative;
+      cursor: pointer;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .usage_s .usage_div_box [role="box"]:hover{
+      background: #f2f2f2;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .usage_s .usage_div_box [role="box"] img{
+      width:100%;
+      background: #f2f2f2;
+      min-height: 100%;
+      max-height: 140px;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .usage_s .usage_div_box [role="box"] input{
+      position: absolute;
+      appearance: none;
+      -webkit-appearance: none;
+      width:100%;
+      background: none;
+      height: 100%; 
+      z-index: 9999; 
+      top:0px;
+      left:0px;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .usage_s .usage_div_box [role="box"] [role="inforbutton"]{
+      position: absolute;
+      display:none;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .upload_prescription_div_box{
+      border:1px solid none !important;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .upload_prescription_div_box [role="form-inner"]{
+      display:grid;
+      grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+      
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .upload_prescription_div_box [role="form-inner"] [role="radio-checkbox-col"]{
+      display: flex;
+      align-items: flex-start;
+      gap:10px;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .upload_prescription_div_box [role="top"]{
+      
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .upload_prescription_div_box [role="form-inner"]{
+      margin-top:15px;
+      border-bottom: 1px solid #ddd;
+      padding:10px 0;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] fieldset > div{ 
+      padding:0;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .upload_prescription_div_box [role="form-inner"] [role="radio-checkbox-col"] input{
+      appearance: none;
+      -webkit-appearance: none;
+      width:22px;
+      height:22px;
+      border:1px solid #ddd;
+      border-radius: 4px;
+      margin:0px;
+      position: relative;
+      top:4px;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .upload_prescription_div_box [role="form-inner"] [role="radio-checkbox-col"] input:checked{
+    background: #f2f2f2 url(https://img.icons8.com/ios-glyphs/30/000000/checkmark--v1.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:10px;
+    border:1px solid #ddd;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .upload_prescription_div_box [role="form-inner"] [role="radio-checkbox-col"] h5{
+      font-size:15px;
+      margin-bottom:0px;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .upload_prescription_div_box [role="form-inner"] [role="prescription_options"] #removeImage1{
+      display: none
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .upload_prescription_div_box [role="form-inner"] [role="prescription_options"] #removeImage1.rmv{
+    all: unset;
+    position: relative;
+    top: 3px;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .upload_prescription_div_box [role="form-inner"] .file__uploaded{
+    display: flex;
+    align-items: center;
+    margin-top: 1px;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .upload_prescription_div_box [role="form-inner"] [role="prescription_options"] .purevw_prescription{
+      background: inherit;
+      border:1px solid #ddd;
+      padding:10px;
+      width:100%;
+      border-radius: 4px;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .upload_prescription_div_box [role="form-inner"] [role="patient-type"]{
+       
+      display: flex;
+      flex-direction: column;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .upload_prescription_div_box [role="form-inner"] [role="patient-type"] input{
+      background: #fff;
+      border:1px solid #ddd;
+      padding:10px;
+      height: 40px;
+      border-radius: 5px;
+      margin:6px 0;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .upload_prescription_div_box [role="form-inner"] [role="patient-type"] em{
+    font-size: 12px;
+      font-style: normal;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .upload_prescription_div_box [role="form-inner"] [role="patient-type"] input[disabled]{
+    background:#ddd;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .custom-btn{
+      background: #f2f2f2;
+      padding:15px 15px;
+      display: inline-flex;
+       
+      border-radius: 4px;
+      height: auto;
+      min-height: unset;
+      margin-top:10px;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .upload_prescription_div_box [role="form-inner"] [role="prescription_options"] label{
+      display:none;
+  }
+  
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .tips-prescription-content [role="lenses-row"],
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .tips-prescription-content [role="tint-density"]{
+      display: grid;
+      grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+      gap:15px;
+      margin-top:15px;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .tips-prescription-content [role="lenses-row"] [role="box"],
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .tips-prescription-content [role="tint-density"] [role="box"]{
+      position: relative;
+      overflow: hidden
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .tips-prescription-content [role="lenses-row"] .purevw_lens_material_box input,
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .choose_finish_lenses_div_box .rx-prescription-container [role="box"] input,
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .tips-prescription-content [role="tint-density"] [role="box"] input{
+      position: absolute;
+      width:100%;
+      height:100%;
+      top:0px;
+      left:0px;
+      background: red;
+      appearance: none;
+      opacity: 0
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .tips-prescription-content [role="lenses-row"] .purevw_lens_material_box,
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .tips-prescription-content [role="tint-density"] [role="box"] .choose_purevision{
+      border:1px solid #ddd;
+      padding:15px;
+      border-radius: 5px;
+      height:100%;
+      display: flex;
+      flex-direction: column;
+      gap:6px;
+      overflow: hidden;
+      position: relative;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .tips-prescription-content [role="lenses-row"] .purevw_lens_material_box:hover,
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .tips-prescription-content [role="tint-density"] [role="box"] .choose_purevision:hover{
+      background: #f2f2f2
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .tips-prescription-content [role="lenses-row"] .purevw_lens_material_box img,
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .tips-prescription-content [role="tint-density"] [role="box"] .choose_purevision img{
+      display: none
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .tips-prescription-content [role="lenses-row"] .purevw_lens_material_box h3,
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .tips-prescription-content [role="tint-density"] [role="box"] .choose_purevision h3{
+      margin:0px;
+      font-size:18px;
+      font-weight: bold;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .choose_finish_lenses_div_box .rx-prescription-container{
+       margin-top:20px;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .choose_finish_lenses_div_box .rx-prescription-container [role="box"]{
+      position: relative;
+      border-bottom:1px solid #ddd;
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      align-items: center;
+      gap:10px;
+      padding:15px 0;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .choose_finish_lenses_div_box .rx-prescription-container [role="box"]:hover{
+      background: #f2f2f2
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] .choose_finish_lenses_div_box .rx-prescription-container [role="box"] img{
+      width:100%;
+      background: #f2f2f2;
+      min-height: 100%;
+      max-height: 100px;
+      border-radius: 4px;
+  }
+  
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] [role="tint-color"] [role="tint-density"]{
+      display: grid;
+      grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+      gap:15px;
+      margin:20px 0;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] [role="tint-color"] [role="tint-density"] [role="density-col"]{
+      border:1px solid #ddd;
+      border-radius: 5px;
+      padding:15px;
+      display: flex;
+      flex-direction: column;
+      row-gap:10px;
+      cursor: pointer;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] [role="tint-color"] [role="tint-density"] [role="density-col"].density-active{
+      background: #f2f2f2;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] [role="tint-color"] [role="tint-density"] [role="density-col"] h4{
+      font-size:16px;
+      line-height: 20px;
+      font-weight: bold
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] [role="tint-color"] [role="tint-density"] [role="density-col"] h5{
+      font-size:14px;
+      font-weight: bold
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"] [role="tint-color"] [role="tint-density"] [role="density-col"] button{
+      padding:5px 10px;
+      font-size:12px;
+      border-radius: 4px;
+      background:var(--color-black);
+      border:1px solid var(--color-black);
+      color:#fff;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"]  [role="checkout-col"] table{
+      margin-bottom: 20px;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"]  [role="checkout-col"] table tr td{
+      padding:6px !important;
+  }
+  .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"]  [role="checkout-col"] button{
+      padding:8px 25px;
+      border-radius: 3px;
+      background:var(--color-black);
+      border:1px solid var(--color-black);
+      color:#fff;
+  }
+  .Advanced_lens [role="purpose--spec"] .text-success{
+    all: unset;
+    color:green;
+    font-size:12px;
+    font-style: normal;
+  } 
+  .Advanced_lens .btn-rmv1{
+    display:none;
+  }
+  /*left area*/
+  .Advanced_lens [role="right-usage"] [role="left-wrap"]{
+      background: #f2f2f2;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+  }
+  .Advanced_lens [role="right-usage"] [role="left-wrap"] [role="glasses-img"]{
+      flex:1;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+  }
+  .Advanced_lens [role="right-usage"] [role="left-wrap"] [role="glasses-img"] img{
+      max-height: 100%;
+      width:100%;
+      object-fit: contain;
+  }
+  .Advanced_lens [role="right-usage"] [role="left-wrap"] [role="left-wrap-content"]{
+      margin:0px !important;
+      background: #fff;
+      padding:20px;
+      display: flex;
+      flex-direction: column;
+      row-gap:4px;
+      border-radius: 4px;
+  }
+  .Advanced_lens [role="right-usage"] [role="left-wrap"] [role="left-wrap-content"] h4{
+    font-size:20px;
+  }
+  /*TOP BAR*/
+  .purevw_nextprv{
+      display:block;
+      margin-bottom: 10px;
+  }
+  .close_purevision{
+     position: absolute;
+      width: 25px;
+      height: 25px;
+      border-radius: 100%;
+      border: 1px solid #ddd;
+      top: 12px;
+      right: 20px;
+      display: inline-flex;
+      align-items: center;
+      background:#fff url(https://img.icons8.com/windows/32/null/multiply.png);
+      justify-content: center;
+      font-size: 0;
+      background-size: 18px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      z-index:999;
+  }
+  .purevw_nextprv{
+      padding: 20px 0;
+      font-weight: bold;
+  }
+  .overflowbody{
+      overflow: hidden;
+  }
+  #select_lens{
+    margin-right: 10px;
+    /* height: 100%; */
+    all: unset;
+    background: none;
+    border: 2px solid #000;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 12px;
+    color: #000;
+    font-weight: bold;
+    cursor:pointer;
+  }
+  
+  .loader{
+    position: absolute;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      background: #fff;
+      z-index: 99;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      height: 100%;
+  }
+  
+  @media(max-width:767px){
+    .Advanced_lens [role="right-usage"] [role="list-box"]{
+      display: flex;
+      flex-direction: column; 
+      overflow: scroll;
+      height:auto;
+    }
+    .Advanced_lens [role="right-usage"]{
+      overflow-y: auto;
+      height: calc(100vh - 22px);
+      display: block; 
+      margin: 10px;
+    }
+    .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"]{
+      overflow: hidden;
+    }
+    #select_lens{
+      margin-right:0px;
+    }
+    .close_purevision{
+      position: fixed;
+      top: 25px;
+    }
+    .Advanced_lens [role="right-usage"] [role="right-wrap-fullbody"]{
+      order:-1;
+    }
+    .Advanced_lens [role="right-usage"] [role="left-wrap"] [role="left-wrap-content"]{
+      position: fixed;
+      bottom: 10px;
+      width: 94%;
+      left: 10px;
+      z-index: 999;
+      border-top: 1px solid #ddd;
+      padding: 10px;
+      row-gap: 0px;
+      text-align: center;
+      background: #fff;
+    }
+  }
+  body.body-hidden{
+    overflow: hidden;
+  }
+  .tint-color-section {
+    margin: 0 auto;
+    width: 35px;
+    border-radius: 50%;
+    height: 35px;
+}  
+
+.tint_color li {
+    float: left;
+}
+[role="tint-color"]{
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+[role="tint-color"] h6{
+    margin-bottom: 5px;
+}
+
+[role="tint-color"] ul{
+    display: flex;
+    gap: 18px;
+    text-align: center;
+    align-items: center;
+}
+[role="tint-color"] li {
+    position: relative;
+    min-height: 55px;
+    min-width: 50px;
+}
+[role="tint-color"] li span{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    margin: 0 auto; 
+}
+#tintOtherOption{
+    border: 1px solid #ddd;
+    min-height: 46px;
+    padding: 8px;
+    font-size: 15px;
+}
+input.gradient {
+    display: inline;
+}
+.tint-colr h6 {
+    display: inline;
+}
+.tint-color-section.density-active {
+    border: 1px solid #000 !important;
+    /* box-shadow: 0px 0px #888888; */
+    height: 40px;
+    width: 40px;
+}

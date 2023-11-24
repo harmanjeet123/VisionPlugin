@@ -1,0 +1,90 @@
+.setting-form {
+    box-shadow: 0px 0px 2px 0px #b7b7b7;
+    padding: 15px;
+    margin-top: 16px;
+    background-color: #fff;
+    }
+    
+    .setting-form table th {
+    width: 150px;
+    padding-left: 10px;
+    }
+    
+    .setting-form table input {
+    width: 44%;
+    }
+    
+    .border-top { border-top: 1px solid #ccc8c8; }
+    .border-bottom { border-bottom: 1px solid #ccc8c8; }
+    .border-left { border-left: 1px solid #ccc8c8; }
+    .border-right { border-right: 1px solid #ccc8c8; }
+    
+    tr.spacer td {
+    padding: 0;
+    }
+    
+    ul.coatings-listss li {
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    margin: 5px 15px 2px 0;
+    padding: 10px;
+    }
+    
+    .green {
+    background-color: #04ff0029 !important;
+    }
+    
+    .red-error {
+    outline: 1px solid red !important;
+    color: red;
+    }
+    
+    .hide_by_po {
+    position: absolute;
+    left: -9999px;
+    }
+    
+    .prescription-content {
+    display: none;
+    }
+    .none-d {
+    display: none;
+    }
+    .button.single_add_to_cart_button.button.alt {
+    grid-area: downright;
+    display: none;
+    height: 55px;
+    text-align: center;
+    font-style: inherit;
+    }
+    .btn-primary {
+    border-color: #007bff;
+    height: 54px;
+    }
+    span.close_purevision {
+    float: right;
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: red;
+    cursor: pointer;
+    }
+    .purevw_nextprv {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+    
+    #woocommerce-product-data ul.wc-tabs li.purevision_options a:before { font-family: Dashicons; content: 	'\f177'; }
+    .hide_on_option.hidenn {
+    position: absolute;
+    left: -9999px;
+    }
+    img.upload_image {
+    width: 150px;
+    height: 150px;
+    }
+    .toplevel_page_PureVision li.wp-first-item {
+    display: none; 
+    } 
+.toplevel_page_PureVision li.wp-first-item {
+   display: none; }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="71px" height="40px" viewBox="0 0 71 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>B0D3FA02-2B59-4C43-BCDC-21452748360D</title>
+    <defs>
+        <linearGradient x1="50%" y1="28.0208333%" x2="50%" y2="79.6267361%" id="linearGradient-1">
+            <stop stop-color="#B7DEEC" stop-opacity="0.556435752" offset="0%"></stop>
+            <stop stop-color="#80BAD5" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <path d="M8.86491056,1.99089818 C21.4545857,-1.44486776 63.1983055,-0.0696560398 66.0614809,3.34981378 C68.9246562,6.7692836 70.0729432,23.6212855 58.8870442,32.7199542 C47.7011452,41.8186229 16.4117392,37.9645898 7.36497248,30.1641789 C-1.68179421,22.363768 -3.72476455,5.42666413 8.86491056,1.99089818 Z" id="path-2"></path>
+        <filter x="-3.0%" y="-5.3%" width="105.9%" height="110.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Choose-Lens-b" transform="translate(-343.000000, -1288.000000)">
+            <g id="Lens-Copy" transform="translate(345.000000, 1289.000000)">
+                <g id="Rectangle">
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <path stroke="#787777" stroke-width="1" d="M8.73327276,1.50853785 C14.8862735,-0.170637353 27.9704592,-0.714634079 40.118416,-0.426014538 C53.130886,-0.116855295 64.9533856,1.24758864 66.4448396,3.0288215 C68.1882773,5.11099662 69.3944995,12.0289149 67.616103,19.3091732 C66.4093962,24.2490941 63.8447479,29.3318528 59.2025519,33.1078393 C53.9109738,37.4120366 44.1914553,38.8974849 34.3747782,38.4105242 C23.186114,37.8555056 11.9180647,34.750198 7.03846728,30.5428534 C2.09841916,26.2833863 -0.798315784,19.3627 -0.475455552,13.2984283 C-0.324779201,10.4682801 0.524210783,7.8247668 2.1743948,5.70925768 C3.67038907,3.79141731 5.82534153,2.30212236 8.73327276,1.50853785 Z"></path>
+                </g>
+                <path d="M18,2.00312782 C41.1954127,1.95579965 55.3704819,2.44557604 60.5252077,3.472457 C68.2572963,5.01277843 65.5624474,17 65.4777371,17 C65.3930269,17 65.3930269,11.5656995 49.6885102,6.74891755 C39.2188324,3.53772956 28.6559956,1.95579965 18,2.00312782 Z" id="Rectangle" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
